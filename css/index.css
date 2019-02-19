@@ -1,0 +1,595 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body{
+	background: url(../images/ThinkPad.png);
+}
+body>div{
+	width: 100%;
+}
+div.header{
+	height: 70px;
+	background: rgba(0,0,0,.8);
+	position: relative;
+}
+div.header div.headerCenter,div.content div.contentCenter,div.footer div.footerCenter{
+	width: 1200px;
+	height: 100%;
+	margin:0px auto;
+}
+div.headerCenter{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+div.headerCenter div.nav{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 780px;
+	height: 100%;
+}
+div.headerCenter div.nav h1,div.headerCenter div.nav div.navList{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 0;
+}
+div.headerCenter div.nav h1{
+	background: url(../images/LOGO.jpg);
+}
+div.headerCenter div.nav div.navList{
+	left: 156px;
+}
+div.headerCenter div.nav div.navList a{
+	float: left;
+	margin-right: 28px;
+	color: #fff;
+	text-decoration: none;
+	font: 18px/70px arial;
+}
+div.headerCenter div.nav div.navList a:hover{
+	color: #d64848;
+}
+div.headerCenter div.nav div.navList a:last-child{
+	margin-right: 0px;
+}
+div.headerCenter div.nav h1{
+	width: 94px;
+	height: 31px;
+	margin: auto 0px;
+}
+div.nav div.productCenter{
+	position: absolute;
+	width: 1035px;
+	height: auto;
+	padding-top: 17px;
+	top: 70px;
+	left: 114px;
+	z-index: 10;
+	display: none;
+}
+div.nav div.productCenter>i{
+	position: absolute;
+	width: 28px;
+	height: 11px;
+	top: -11px;
+	left: 157px;
+	z-index: 10;
+	background: url(../images/secondMenu/top-icon.jpg) no-repeat;
+}
+div.nav div.productCenter div.productImages{
+	width: 100%;
+	height: 112px;
+	background: url(../images/ThinkPad.png);
+}
+div.nav div.productCenter div.productImages div.productImagesItem{
+	width: 199px;
+	height: 100%;
+	float: left;
+	margin-right: 10px;
+}
+div.productImages div.productImagesItem img{
+	display: block;
+	width: 100%;
+	height: 111px;
+	margin-bottom: 2px;
+}
+div.productImages div.productImagesItem div{
+	width: 100%;
+	height: 31px;
+	border-top: 1px solid #42403f;
+	background: #000;
+	display: none;
+}
+div.productImages div.productImagesItem div span{
+	margin-left: 10px;
+	font: 14px/32px arial;
+	color: #5e5e5e;
+}
+div.productImages div.productImagesItem div.descript{
+	width: 100%;
+	height: 32px;
+}
+div.nav div.productCenter div.productImages div.productImagesItem:last-child{
+	margin-right: 0px;
+}
+div.nav div.productCenter div.productTypeList{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #666;
+	color: #949494;
+	background: url(../images/ThinkPad.png);
+}
+div.nav div.productCenter div.productTypeList span{
+	margin: 0px 22.5px;
+	font: 19px/70px arial;
+	cursor: pointer;
+}
+div.nav div.productCenter div.productTypeList div.productTypeListContent{
+	width: 100%;
+	height: 88px;
+	position: relative;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 391px;
+	padding-top: 17px;
+	padding-left: 35px;
+	border-top: 1px solid #666;
+	background: #000;
+	display: none;
+}
+div.productTypeListContentItem>div{
+	float: left;
+	width: 80px;
+	height: 100%;
+	margin-right: 20px;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem>span{
+	font: 18px/40px arial;
+	margin: 0px;
+	font-weight: lighter;
+	margin-right: 19px;
+	white-space: nowrap;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem>span:hover,div.productTypeList div.productTypeListContent div.productTypeListContentItem div p span:hover{
+	color: #fff;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem:last-child span{
+	margin-right: 60px;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem>span:last-child{
+	margin-right: 0px;
+}
+div.productTypeListContentItem>div.long{
+	width: 140px;
+}
+div.productTypeListContentItem>div:last-child{
+	margin-right: 0px;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem div p{
+	text-align: left;
+	height: 40px;
+	font: 15px/20px arial;
+	color: #5e5e5e;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem div p:first-child{
+	color: #999;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem div p span{
+	margin: 0px;
+	font: 15px/20px arial;
+}
+div.productTypeListContent div#thinkplus{
+	height: 109px;
+}
+div.productTypeListContent div#ThinkCentre{
+	height: 231px;
+}
+div.productTypeListContent div#ThinkVision{
+	height: 271px;
+}
+div.productTypeListContent div#ThinkLife{
+	height: 71px;
+}
+div.productTypeList div.productTypeListContent div.productTypeListContentItem:first-child{
+	display: block;
+}
+div.headerCenter div.search{
+	position: absolute;
+	right: 73px;
+	top: 0px;
+	height:100%;
+	width: 258px;
+}
+div.headerCenter div.search form{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto 0px;
+	height: 25px;
+	width: 171px;
+}
+div.headerCenter div.search form input[type="text"]{
+	display: inline-block;
+	width: 130px;
+	height: 100%;
+	padding: 0px 10px;
+	background: #272727;
+	border:none;
+	outline: none;
+	vertical-align: top;
+	color: #fff;
+}
+div.headerCenter div.search form button{
+	display: inline-block;
+	width: 21px;
+	height: 25px;
+	position: relative;
+	vertical-align: top;
+	background: rgba(0,0,0,0.8);
+	border:none;
+}
+div.headerCenter div.search form button img{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 17px;
+	height: 17px;
+	margin: auto;
+}
+div.headerCenter div.search p.loginRegister{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 74px;
+	height: 21px;
+	margin: auto 0px;
+	font: 16px/21px arial;
+}
+div.headerCenter div.search p.loginRegister a{
+	color: #fff;
+	text-decoration: none;
+}
+div.headerCenter div.search p.loginRegister a:first-child{
+	padding-right: 4px;
+	border-right: 1px solid #fff;
+}
+div.headerCenter div.search p.loginRegister a:last-child{
+	padding-left: 3px;
+}
+div.banner{
+	height: 540px;
+	margin-bottom: 50px;
+	position: relative;
+}
+div.banner div.bannerImages{
+	width: 990px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+div.banner div.bannerImages div.centerImages{
+	position: absolute;
+	width: 1920px;
+	height: 100%;
+	left: -473px;
+	top: 0px;
+	overflow: hidden;
+}
+div.banner div.bannerImages div.centerImages div.bannerBlock{
+	position: absolute;
+	left: -1920px;
+	width: 21120px;
+	height: 100%;
+	transition: 200ms left;
+}
+div.banner div.bannerImages div.centerImages div.bannerOver{
+	position: absolute;
+	left: 0px;
+	width: 19200px;
+	height: 100%;
+	transition: 0s left;
+}
+div.banner div.bannerImages div.centerImages div.bannerBlock div.bannerItem{
+	width: 1920px;
+	height: 100%;
+	float: left;
+	background: url(../images/banner/0.jpg);
+}
+div.banner div.bannerButtons{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 501px;
+	margin: 0px auto;
+	width: 152px;
+	height: 8px;
+	z-index: 1;
+}
+div.banner div.bannerButtons a{
+	float: left;
+	width: 8px;
+	height: 8px;
+	background: rgba(100,100,100,.5);
+	margin-right: 10px;
+	border-radius: 50%;
+}
+div.banner div.bannerButtons a:last-child{
+	margin-right: 0px;
+}
+div.banner div.bannerButtons a:first-child{
+	background: rgba(100,100,100,.9);
+}
+div.banner div.sideButton i{
+	position: absolute;
+	width: 24px;
+	height: 42px;
+	left: 10px;
+	top: 250px;
+	background: url(../images/arrow02.png) no-repeat;
+	visibility: hidden;
+	z-index: 10;
+	cursor: pointer;
+}
+div.banner div.sideButton i:last-child{
+	left: auto;
+	right: 10px;
+	background: url(../images/arrow01.png) no-repeat;
+}
+div.banner:hover div.sideButton i{
+	visibility: visible;
+}
+div.content{
+	height: 850px;
+	margin-bottom: 50px;
+	position: relative;
+}
+div.content div.contentCenter{
+	position: absolute;
+	width: 1200px;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+}
+div.product,div.brand{
+	width: 100%;
+	height: 411px;
+	position: relative;
+}
+div.product:hover i,div.brand:hover i{
+	opacity: 1;
+}
+div.product i,div.brand i{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	z-index: 10;
+	left: 10px;
+	top: 176px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50%;
+	opacity: 0;
+	transition: 300ms opacity;
+	cursor: pointer;
+}
+div.product i em,div.brand i em{
+	position: absolute;
+	width: 20px;
+	height: 32px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	background: url(../images/productList/arrow01.png);
+	opacity: 0.5;
+}
+div.product i:first-child em,div.brand i:first-child em{
+	background: url(../images/productList/arrow02.png);
+}
+div.product i:last-child,div.brand i:last-child{
+	left: auto;
+	right: 10px;
+}
+div.product{
+	margin-bottom: 25px;
+
+}
+div.product h2,div.product div.productList,div.brand h2,div.brand div.brandList{
+	float: left;
+}
+div.product h2,div.brand h2{
+	width: 130px;
+	height: 100%;
+	background: url(../images/productList/header.jpg);
+	color: #fff;
+	font: 34px/123px arial;
+	text-align: center;
+}
+div.product div.productList,div.brand div.brandList{
+	width: 1070px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+div.product div.productList div.productBlock,div.brand div.brandList div.brandBlock{
+	height: 100%;
+	position: absolute;
+	transition: 1s left;
+}
+div.product div.productList div.productBlock{
+	width: 1869px;
+}
+div.brand div.brandList div.brandBlock{
+	width: 2136px;
+}
+div.productItem{
+	width: 190px;
+	height: 290px;
+	padding: 80px 38.5px 40px 38.5px;
+	float: left;
+	background: linear-gradient(to right,#2e2e2e,#222);
+	color: #afafaf;
+}
+div.brandItem{
+	float: left;
+	height: 371px;
+	width: 267px;
+	padding-top: 40px;
+	background: linear-gradient(to right,#2e2e2e,#222);
+	color: #afafaf;
+}
+div.productItem div.title{
+	width: 100%;
+	height: 144px;
+	border-bottom: 1px solid #afafaf;
+	margin-bottom: 11px;
+	color: #e3e3e3;
+}
+div.productItem div.title h3{
+	font: 88px/88px arial;
+	height: 85px;
+}
+div.productItem div.title h3 em{
+	font: 88px/88px arial;
+}
+div.productItem div.title h3 span{
+	font: 20px/46px arial;
+	vertical-align: bottom;
+}
+div.productItem div.title h4{
+	font: 32px/32px arial;
+}
+div.productItem div.content{
+	width: 100%;
+	height: 135px;
+	color: #e3e3e3;
+	font: 14px/21px arial;
+	position: relative;
+}
+div.productItem div.content>span{
+	position: absolute;
+	width: 6em;
+	height: 1em;
+	font: 15px/15px arial;
+	color: #f05050;
+	left: -1px;
+	bottom: 0px;
+	vertical-align: top;
+}
+div.brandItem div.top{
+	width: 206px;
+	height: 213px;
+	margin: 0px auto;
+}
+div.brandItem div.top div.year{
+	width: 189px;
+	height: 33px;
+	padding: 0px 6px;
+	margin: 0px auto;
+	background: #848483;
+	color: #2d2d2c;
+	font: 16px/33px arial;
+	margin-bottom: 12px;
+}
+div.brandItem div.top div.title{
+	width: 100%;
+	height: 78px;
+	color: #e3e3e3;
+	font: 32px/32px arial;
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 18px;
+}
+div.brandItem div.top p{
+	font: 14px/25px arial;
+	color: #e3e3e3;
+}
+div.brandItem div.bottom{
+	width: 246px;
+	height: 145px;
+	margin: 0px auto;
+}
+div.footer{
+	height: 291px;
+}
+div.footer div.footerCenter{
+	height: 100%;
+	border-top: 1px solid #fff;
+	padding-top: 40px;
+}
+div.footer div.footerCenter div.contactUS{
+	width: 100%;
+	height: 105px;
+	margin-bottom: 40px;
+}
+div.footer div.footerCenter div.contactUS div.contactUSItem{
+	width: 80px;
+	height: 106px;
+	float: left;
+	margin-right: 50px;
+	font: 15px/26px arial;
+	position: relative;
+}
+div.footer div.footerCenter div.contactUS div.contactSearch{
+	margin-right: 77px;
+}
+div.footer div.footerCenter div.contactUS div.contactSearch:last-child{
+	margin-right: 0px;
+}
+div.footer div.footerCenter div.contactUS div.contactUSItem a{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	color: #fff;
+	text-decoration: none;
+}
+div.footer div.footerCenter div.contactUS div.contactUSItem:first-child{
+	width: 177px;
+}
+div.footer div.footerCenter div.contactUS div.contactUSItem img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+div.footer div.footerCenter div.webInfo{
+	width: 100%;
+	height: 145px;
+	color: #8d8d8d;
+}
+div.footerCenter div.webInfo p:first-child{
+	font: 15px/17px arial;
+}
+div.footerCenter div.webInfo p:first-child a{
+	color: #8d8d8d;
+	padding: 0px 20px 0px 26px;
+	border-right: 1px solid #8d8d8d;
+	text-decoration: none;
+}
+div.footerCenter div.webInfo p:first-child a:first-child{
+	padding-left: 0px;
+}
+div.footerCenter div.webInfo p{
+	font: 12px/17px arial;
+}
+div.footerCenter div.webInfo p:last-child{
+	font: 12px/23px arial;
+}
